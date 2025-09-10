@@ -13,7 +13,7 @@ function App() {
         <LoginForm onLogin={setUser} />
       ) : (
         <div className="onPageChild">
-          <h1>This is IQ Testing Site</h1>
+          <h1>Student Evaluation Quiz</h1>
           <div className="question-area">
             <QuestionsList />
             {user.role === "teacher" && ( // Only show QuizForm to teachers
