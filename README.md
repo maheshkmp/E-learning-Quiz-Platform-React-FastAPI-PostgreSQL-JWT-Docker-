@@ -73,6 +73,9 @@ Login page
 Student quiz attempt
 <img width="1286" height="783" alt="Screenshot 2025-09-10 172607" src="https://github.com/user-attachments/assets/19c4787c-5e1a-421b-a294-b8a7c78d9ac7" />
 
+Fastapi Swagger
+<img width="1484" height="793" alt="Screenshot 2025-09-10 175309" src="https://github.com/user-attachments/assets/ac9d8733-6135-4724-a08f-63bd7156cae0" />
+
 📂 Project Structure
 ```bash
 Copy code
