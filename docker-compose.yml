@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:123458678@db:5432/iqmeter
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:15
+    container_name: iqmeter-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123458678
+      POSTGRES_DB: iqmeter
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
