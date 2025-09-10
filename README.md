@@ -31,26 +31,29 @@ The app includes **JWT authentication**, **role-based access control (student/te
 ```bash
 git clone https://github.com/yourusername/fastapi-react-quiz.git
 cd fastapi-react-quiz
-2. Backend Setup (FastAPI)
-bash
+```
+###2. Backend Setup (FastAPI)
+```bash
 Copy code
 cd backend
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 Start the backend:
 
-bash
+```bash
 Copy code
 uvicorn app.main:app --reload
 API will be available at 👉 http://localhost:8000/docs
-
-3. Frontend Setup (React)
-bash
+```
+###3. Frontend Setup (React)
+```bash
 Copy code
 cd frontend
 npm install
 npm start
+```
 Frontend will run at 👉 http://localhost:3000
 
 🔑 Authentication & Roles
@@ -63,16 +66,15 @@ Teachers can be created with role="teacher"
 Login returns a JWT token which is required for accessing protected routes
 
 📸 Screenshots
-👉 (Add screenshots here once UI is finalized)
 
 Login page
-
-Teacher question creation form
+<img width="1260" height="271" alt="Screenshot 2025-09-10 172157" src="https://github.com/user-attachments/assets/5aa60557-b456-4ad8-854b-fe0942c2f1c8" />
 
 Student quiz attempt
+<img width="1286" height="783" alt="Screenshot 2025-09-10 172607" src="https://github.com/user-attachments/assets/19c4787c-5e1a-421b-a294-b8a7c78d9ac7" />
 
 📂 Project Structure
-bash
+```bash
 Copy code
 fastapi-react-quiz/
 │── backend/            # FastAPI backend
@@ -89,6 +91,7 @@ fastapi-react-quiz/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   └── App.jsx
+```
 💡 Future Improvements
 📊 Quiz results & leaderboard
 
